@@ -63,22 +63,44 @@
 //     </div>
 //   );
 // }
-import Hero from '../components/Hero'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
-import Footer from '../components/Footer'
+
+// import Navbar from "../components/Navbar";
+// import Hero from "../components/Hero";
+// import Features from "../components/Features";
+// import Testimonials from "../components/Testimonials";
+// import Pricing from "../components/Pricing";
+// import Footer from "../components/Footer";
+
+// export default function Page() {
+//   return (
+//     <main className="min-h-screen bg-gradient-to-b from-rose-50 via-white to-rose-50">
+//       <Navbar />
+//       <Hero />
+//       <Features />
+//       <Testimonials />
+//       <Pricing />
+//       <Footer />
+//     </main>
+//   );
+// }
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Categories from "../components/Categories";
+import Featured from "../components/Featured";
+import Articles from "../components/Articles";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 
 export default function Page() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main>
+      <Navbar />
       <Hero />
-      <div className="max-w-6xl mx-auto px-6 w-full">
-        <Features />
-        <Testimonials />
-        <Pricing />
-      </div>
+      <Categories />
+      <Featured />
+      <Articles />
+      <Newsletter />
       <Footer />
     </main>
-  )
+  );
 }
