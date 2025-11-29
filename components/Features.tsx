@@ -1,7 +1,7 @@
 const features = [
   {
     title: "Brightening",
-    desc: "Helps reduce dullness and even skin tone.",
+    desc: "Helps visbily reduce dullness and even skin tone.",
     img: "/brightening.png"
   },
   {
