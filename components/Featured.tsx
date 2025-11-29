@@ -5,13 +5,13 @@ const features = [
     title: "Clinically proven brightening",
     desc: "Stabilised Vitamin C and niacinamide visibly reduce dark spots and uneven tone.",
     icon: "💡",
-    image: "/images/brightening.jpg",
+    image: "/images/brightening.webp",
   },
   {
     title: "Hydration without heaviness",
     desc: "Triple-weight hyaluronic acid and squalane give plump, bouncy skin that never feels greasy.",
     icon: "💧",
-    image: "/images/hydration.jpg",
+    image: "/images/hydration.webp",
   },
   {
     title: "Skin-barrier friendly",
