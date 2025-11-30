@@ -1,44 +1,87 @@
+
 // export default function Navbar() {
 //   return (
-//     <header className="sticky top-0 z-20 border-b bg-white/70 backdrop-blur">
-//       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-//         <div className="flex items-center gap-2">
-//           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-pink-500 text-white text-sm font-bold">
-//             G
-//           </div>
-//           <span className="text-lg font-semibold tracking-tight">GlowSkin</span>
-//         </div>
-//         <nav className="hidden gap-6 text-sm text-slate-600 md:flex">
-//           <a href="#features" className="hover:text-pink-600">Features</a>
-//           <a href="#testimonials" className="hover:text-pink-600">Reviews</a>
-//           <a href="#pricing" className="hover:text-pink-600">Pricing</a>
-//         </nav>
-//         <a
-//           href="#pricing"
-//           className="rounded-full bg-pink-600 px-4 py-2 text-xs md:text-sm font-medium text-white shadow-sm hover:bg-pink-700"
-//         >
-//           Shop Now
+//     <header className="fixed top-0 inset-x-0 z-30 bg-black/30 backdrop-blur border-b border-white/10">
+//       <nav className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 text-sm">
+        
+//         {/* Brand */}
+//         <a href="#hero" className="text-xl font-serif font-bold text-white">
+//           GlowSkin
 //         </a>
-//       </div>
+
+//         {/* Menu */}
+//         <div className="hidden md:flex gap-8 text-gray-300">
+//           <a href="#hero" className="hover:text-pink-400 transition">
+//             Home
+//           </a>
+//           <a href="#features" className="hover:text-pink-400 transition">
+//             Product
+//           </a>
+//           <a href="#testimonials" className="hover:text-pink-400 transition">
+//             Reviews
+//           </a>
+//           <a href="#pricing" className="hover:text-pink-400 transition">
+//             Pricing
+//           </a>
+//         </div>
+
+//         {/* Icons */}
+//         <div className="hidden sm:flex gap-5 text-gray-300">
+//           <span className="hover:text-pink-400 cursor-pointer transition">🔍</span>
+//           <span className="hover:text-pink-400 cursor-pointer transition">🛒</span>
+//         </div>
+
+//       </nav>
 //     </header>
 //   );
 // }
 export default function Navbar() {
   return (
-    <nav className="w-full flex justify-between items-center px-8 py-4">
-      <h1 className="text-xl font-serif font-bold">GlowSkin</h1>
+    <header className="fixed top-0 inset-x-0 z-30 bg-black/30 backdrop-blur border-b border-white/10">
+      <nav className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 text-sm">
 
-      <div className="hidden md:flex gap-8 text-sm text-gray-600">
-        <a href="#hero">Home</a>
-        <a href="#features">Product</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-      </div>
+        {/* Brand */}
+        <a
+          href="#hero"
+          className="text-xl font-serif font-bold text-white hover:text-pink-300 transition"
+        >
+          GlowSkin
+        </a>
 
-      <div className="flex gap-4 text-gray-600">
-        <span>🔍</span>
-        <span>🛒</span>
-      </div>
-    </nav>
+        {/* Menu */}
+        <div className="hidden md:flex gap-8 text-gray-400 font-light">
+          <a
+            href="#hero"
+            className="hover:text-pink-400 hover:drop-shadow-[0_0_6px_#f472b6] hover:underline underline-offset-4 transition"
+          >
+            Home
+          </a>
+          <a
+            href="#features"
+            className="hover:text-pink-400 hover:drop-shadow-[0_0_6px_#f472b6] hover:underline underline-offset-4 transition"
+          >
+            Product
+          </a>
+          <a
+            href="#testimonials"
+            className="hover:text-pink-400 hover:drop-shadow-[0_0_6px_#f472b6] hover:underline underline-offset-4 transition"
+          >
+            Reviews
+          </a>
+          <a
+            href="#pricing"
+            className="hover:text-pink-400 hover:drop-shadow-[0_0_6px_#f472b6] hover:underline underline-offset-4 transition"
+          >
+            Pricing
+          </a>
+        </div>
+
+        {/* Icons */}
+        <div className="hidden sm:flex gap-5 text-gray-300">
+          <span className="hover:text-pink-400 hover:drop-shadow-[0_0_8px_#f472b6] cursor-pointer transition">🔍</span>
+          <span className="hover:text-pink-400 hover:drop-shadow-[0_0_8px_#f472b6] cursor-pointer transition">🛒</span>
+        </div>
+      </nav>
+    </header>
   );
 }

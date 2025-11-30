@@ -1,55 +1,51 @@
-// export default function Footer() {
-//   return (
-//     <footer className="mt-12 border-t">
-//       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-//         <div>© {new Date().getFullYear()} GlowSkin</div>
-//         <div className="text-sm text-gray-600">
-//           Contact: support@glowskin.example | Terms • Privacy
-//         </div>
-//       </div>
-//     </footer>
-//   )
-// }
+
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="py-16 border-t text-sm text-gray-600">
-      <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-4 gap-12">
+    <footer className="mt-20 border-t border-white/10 bg-black/30 backdrop-blur text-gray-300 text-sm">
+      <div className="max-w-6xl mx-auto px-8 py-16 grid gap-10 md:grid-cols-4">
+        
         <div>
-          <p className="font-serif font-semibold text-lg">GlowSkin</p>
+          <p className="font-serif font-bold text-xl text-white mb-2">GlowSkin</p>
+          <p className="text-gray-400 text-xs max-w-xs">
+            Clinically formulated skincare for a brighter, healthier you.
+          </p>
         </div>
 
         <div>
-          <p className="font-semibold mb-2">Connect</p>
+          <p className="font-semibold text-white mb-3">Connect</p>
           <ul className="space-y-1">
-            <li>Instagram</li>
-            <li>Youtube</li>
-            <li>TikTok</li>
+            <li className="hover:text-pink-400 cursor-pointer">Instagram</li>
+            <li className="hover:text-pink-400 cursor-pointer">YouTube</li>
+            <li className="hover:text-pink-400 cursor-pointer">TikTok</li>
           </ul>
         </div>
 
         <div>
-          <p className="font-semibold mb-2">Support</p>
+          <p className="font-semibold text-white mb-3">Support</p>
           <ul className="space-y-1">
-            <li>Shipping</li>
-            <li>FAQs</li>
-            <li>Returns</li>
-            <li>Privacy Policy</li>
+            <li className="hover:text-pink-400 cursor-pointer">Shipping</li>
+            <li className="hover:text-pink-400 cursor-pointer">FAQs</li>
+            <li className="hover:text-pink-400 cursor-pointer">Returns</li>
+            <li className="hover:text-pink-400 cursor-pointer">Privacy Policy</li>
           </ul>
         </div>
 
         <div>
-          <p className="font-semibold mb-2">About</p>
+          <p className="font-semibold text-white mb-3">About</p>
           <ul className="space-y-1">
-            <li>Our Story</li>
-            <li>Press</li>
-            <li>Careers</li>
+            <li className="hover:text-pink-400 cursor-pointer">Our Story</li>
+            <li className="hover:text-pink-400 cursor-pointer">Press</li>
+            <li className="hover:text-pink-400 cursor-pointer">Careers</li>
           </ul>
         </div>
       </div>
 
-      <div className="text-center mt-8 text-xs text-gray-400">
-        Designed by Akshaya • GlowSkin © 2025
+      <div className="text-center py-6 text-xs text-gray-500 border-t border-white/10">
+        Designed by <span className="text-pink-400 font-medium">Akshaya</span> • GlowSkin © {year}
       </div>
     </footer>
   );
 }
+
